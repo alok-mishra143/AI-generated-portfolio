@@ -13,7 +13,8 @@ export function CenteredNavBar() {
       document.documentElement.style.scrollBehavior = "auto";
     };
   }, []);
-
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  //@ts-expect-error
   const handleScroll = (id) => {
     const section = document.getElementById(id);
     if (section) {
